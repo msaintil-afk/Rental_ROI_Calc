@@ -11,7 +11,7 @@ class Roi_calc:
         property_response = input('What nickname would you like to name your property i.e rental 1? ')
         self.properties.append(property_response)
             
-    # choose_user
+    # add property address
     def choose_user(self):
         while True:
             print('Users:')
@@ -24,14 +24,14 @@ class Roi_calc:
             else:
                 print(f"{current} is not a user.")
             
-    # add_to_watch_list
+    # add property expenses
     def add_to_watch_list(self, query=""):
         show = Series()
         show.get_info(query)
         self.watch_list.append(show)
         print(f"{show.title} has been added to the watchlist")
     
-    # choose_from_watch_list
+    # show list of properties
     def choose_from_watch_list(self):
         for series in self.watch_list:
             print(f"\n\n{series} | Episodes: {len(series)}")
@@ -54,7 +54,7 @@ class Roi_calc:
     # run 
     def run(self):
         """
-            Method allowing users to calc Roi on an investment.
+            Method allowing users to input property details to calculate Return of investment (ROI) on a Rental property investment.
         """
         print("""
             What would you like to do?
@@ -62,7 +62,7 @@ class Roi_calc:
             [1] - add a property 
             [2] - add rental income
             [3] - add monthly rental expenses i.e(tax,insurance,mortgage,utilities,maintaince)
-            [4] - check roi on a property
+            [4] - check ROI on a property
             [5] - quit app
         """)
         
