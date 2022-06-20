@@ -81,4 +81,4 @@ class Roi_calc:
                 print(f"Thanks for using the roi calc app.")
                 break
             else:
-                print('Incorrect input... Try again.')
+                print("Incorrect input... Try again.")
