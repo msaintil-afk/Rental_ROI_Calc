@@ -83,7 +83,7 @@ menu = ("""
     """)
 
 
-    # run 
+    # run method for user menu input
 def run():
     user = Roi_calc()
     """
